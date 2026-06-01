@@ -2,7 +2,7 @@
 
 export type Project = {
   id: number;
-  category: "flyer" | "thumbnail" | "banner" | "web" ;
+  category: "flyer" | "thumbnail" | "banner" | "web" | "illust" | "movie" ;
   title: string;
   image: string;
   description?: string;
@@ -11,6 +11,7 @@ export type Project = {
 };
 
 export const projects: Project[] = [
+
 
 {id: 1, category: 'thumbnail', title: 'ゆったりカフェBGM【その1】', image: '/images/thumb_00001.jpg', time: '約1時間', link: ''},
 {id: 2, category: 'thumbnail', title: 'ゆったりカフェBGM【その2】', image: '/images/thumb_00002.jpg', time: '約1時間', link: ''},
@@ -136,5 +137,21 @@ export const projects: Project[] = [
 {id: 122, category: 'flyer', title: '確定申告相談会', image: '/images/flyer_00042.jpg', time: '約4時間', link: ''},
 {id: 123, category: 'flyer', title: 'こどもテニスクラブ', image: '/images/flyer_00043.jpg', time: '約5時間', link: ''},
 {id: 124, category: 'flyer', title: 'ビストロNew Open', image: '/images/flyer_00044.jpg', time: '約6時間', link: ''},
-{id: 125, category: 'web', title: 'ジュエリースタジオ ノクターン', image: '/images/web_00001.png', time: '約45時間', link: 'https://portfolio.tsukuri-tai.com/a/'},
+{id: 125, category: 'flyer', title: '足圧整体院', image: '/images/flyer_00045.jpg', time: '約4時間', link: ''},
+{id: 126, category: 'web', title: 'ジュエリースタジオ ノクターン', image: '/images/web_00001.png', time: '約45時間', link: 'https://portfolio.tsukuri-tai.com/a/'},
+{id: 127, category: 'illust', title: '車', image: '/images/illust_00001.jpg', time: '約20時間', link: ''},
+{id: 128, category: 'illust', title: 'りんご【その1】', image: '/images/illust_00002.jpg', time: '約8時間', link: ''},
+{id: 129, category: 'illust', title: '波', image: '/images/illust_00003.jpg', time: '約10時間', link: ''},
+{id: 130, category: 'illust', title: 'みかん', image: '/images/illust_00004.jpg', time: '約1.5時間', link: ''},
+{id: 131, category: 'illust', title: 'トマト', image: '/images/illust_00005.jpg', time: '約1.5時間', link: ''},
+{id: 132, category: 'illust', title: 'たまねぎ', image: '/images/illust_00006.jpg', time: '約1.5時間', link: ''},
+{id: 133, category: 'illust', title: 'りんご【その2】', image: '/images/illust_00007.jpg', time: '約2時間', link: ''},
+{id: 134, category: 'illust', title: 'ぶどう', image: '/images/illust_00008.jpg', time: '約15時間', link: ''},
+{id: 135, category: 'illust', title: 'バナナ', image: '/images/illust_00009.jpg', time: '約15時間', link: ''},
+{id: 136, category: 'illust', title: '女性', image: '/images/illust_00010.jpg', time: '約3時間', link: ''},
+{id: 137, category: 'movie', title: '3人の同居人', image: '/images/movie_00001.png', time: '約8時間', link: 'https://youtu.be/cGxGXDU0o00?si=jeK62iSeCY7JTTa0'},
+{id: 138, category: 'movie', title: 'かんさい三都物語', image: '/images/movie_00002.png', time: '約8時間', link: 'https://youtu.be/mqcTxbF1Ys8?si=r-fDs1w-pN3monFv'},	
+
+
+
 ];

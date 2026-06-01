@@ -59,6 +59,8 @@ export default function PortfolioPage() {
     { id: "banner", label: "Webバナー" },
     { id: "flyer", label: "A4チラシ" },
     { id: "web", label: "ウェブサイト" },
+    { id: "illust", label: "イラスト" },
+    { id: "movie", label: "動画" },
   ];
 
   return (
@@ -204,7 +206,8 @@ export default function PortfolioPage() {
 						onClick={(e) => e.stopPropagation()} // モーダルが閉じるのを防ぐ
 						className="inline-flex items-center gap-1 text-[11px] md:text-xs text-cyan-400 bg-cyan-950/50 border border-cyan-800/60 px-2.5 py-0.5 rounded hover:bg-cyan-400 hover:text-black transition-colors w-fit font-medium"
 					>
-						サイトを見る ↗
+						{selectedProject.category === "web" ? "サイトを見る ↗" : "YouTube動画を見る ↗"}
+						
 					</a>
 					)}
 
