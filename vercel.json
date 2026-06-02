@@ -1,0 +1,12 @@
+{
+  "rewrites": [
+    {
+      "source": "/a",
+      "destination": "https://client-00002-web.vercel.app/a"
+    },
+    {
+      "source": "/a/:path*",
+      "destination": "https://client-00002-web.vercel.app/a/:path*"
+    }
+  ]
+}
