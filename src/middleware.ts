@@ -2,12 +2,22 @@ import { NextResponse } from 'next/server';
 import type { NextRequest } from 'next/server';
 
 export function middleware(req: NextRequest) {
+  const { pathname } = req.nextUrl;
+
+  if (
+    pathname.startsWith('/_next') || 
+    pathname.startsWith('/api') || 
+    pathname.includes('.') // favicon.ico や画像ファイルなど
+  ) {
+    return NextResponse.next();
+  }
+
+  // 🔒 ここから下がBasic認証のチェック
   const basicAuth = req.headers.get('authorization');
 
   if (basicAuth) {
     const authValue = basicAuth.split(' ')[1];
     
-    // 「ユーザー名」と「パスワード」
     const USERNAME = 'kr'; 
     const PASSWORD = '20260501'; 
 
@@ -18,6 +28,7 @@ export function middleware(req: NextRequest) {
     }
   }
 
+  // 認証がまだ、または間違っている場合はダイアログを出す
   return new NextResponse('Authentication Required', {
     status: 401,
     headers: {
@@ -26,9 +37,4 @@ export function middleware(req: NextRequest) {
   });
 }
 
-// すべてのページ（リライト先含む）に強制適用
-export const config = {
-  matcher: [
-    '/((?!_next/static|_next/image|favicon.ico).*)',
-  ],
-};
+//matcher（条件）は使わず、すべてのリクエストを一度このミドルウェアに通す
