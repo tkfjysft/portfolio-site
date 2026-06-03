@@ -6,15 +6,18 @@ export function middleware(req: NextRequest) {
 
   if (basicAuth) {
     const authValue = basicAuth.split(' ')[1];
+    
+    // 「ユーザー名」と「パスワード」
+    const USERNAME = 'kr'; 
+    const PASSWORD = '20260501'; 
 
-    const [user, pwd] = Buffer.from(authValue, 'base64').toString().split(':');
+    const expectedAuthValue = btoa(`${USERNAME}:${PASSWORD}`);
 
-    if (user === 'kr' && pwd === '20260501') {
+    if (authValue === expectedAuthValue) {
       return NextResponse.next();
     }
   }
 
-  //認証が失敗、または未入力の場合はダイアログを出す
   return new NextResponse('Authentication Required', {
     status: 401,
     headers: {
@@ -23,7 +26,9 @@ export function middleware(req: NextRequest) {
   });
 }
 
-//Basic認証を適用する範囲を設定（ここではすべてのページに適用）
+// すべてのページ（リライト先含む）に強制適用
 export const config = {
-  matcher: '/:path*',
+  matcher: [
+    '/((?!_next/static|_next/image|favicon.ico).*)',
+  ],
 };
