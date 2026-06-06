@@ -12,7 +12,7 @@ export function middleware(req: NextRequest) {
     return NextResponse.next();
   }
 
-  // 🔒 ここから下がBasic認証のチェック
+  // ここから下がBasic認証のチェック
   const basicAuth = req.headers.get('authorization');
 
   if (basicAuth) {
