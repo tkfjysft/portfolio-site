@@ -68,7 +68,7 @@ export default function PortfolioPage() {
       {/* Header */}
       <header className="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-200 px-6 py-4">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row md:items-center justify-between gap-4">
-          <h1 className="text-2xl font-bold tracking-tight">
+          <h1 className="text-2xl text-[#706745] font-bold tracking-tight italic">
             {siteConfig.name} <span className="text-gray-400 font-medium text-lg italic">Design Portfolio</span>
           </h1>
           

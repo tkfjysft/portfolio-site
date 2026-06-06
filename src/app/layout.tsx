@@ -10,7 +10,7 @@ const zenKaku = Zen_Kaku_Gothic_New({
 });
 
 export const metadata: Metadata = {
-  title: siteConfig.name,
+  title: siteConfig.name + " Design Portfolio",
   description: siteConfig.description,
 };
 
