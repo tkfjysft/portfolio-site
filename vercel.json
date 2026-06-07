@@ -7,7 +7,16 @@
     {
       "source": "/a/:path*",
       "destination": "https://client-00002-web.vercel.app/a/:path*"
+    },
+
+    {
+      "source": "/b",
+      "destination": "https://client-00001-web.vercel.app/b"
+    },
+    {
+      "source": "/b/:path*",
+      "destination": "https://client-00001-web.vercel.app/b/:path*"
     }
-	
+
   ]
 }
