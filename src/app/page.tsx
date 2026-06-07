@@ -160,6 +160,7 @@ export default function PortfolioPage() {
             if (el) el.style.transform = make3dTransformValue({ x, y, scale });
           }}
           draggableUnZoomed={false}
+		  // @ts-ignore: enforceBounds exists in JS but no
           enforceBounds={false}
         >
 
