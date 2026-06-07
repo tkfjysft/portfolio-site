@@ -17,7 +17,6 @@ export default function PortfolioPage() {
     ? projects 
     : projects.filter((p) => p.category === filter);
 
-  // --- 送り・戻し機能のロジック ---
   const navigateProject = useCallback((direction: "next" | "prev") => {
     if (!selectedProject) return;
     
@@ -154,7 +153,6 @@ export default function PortfolioPage() {
       onClick={() => setSelectedProject(null)}
       className="fixed inset-0 z-[100] bg-black flex flex-col cursor-pointer overflow-hidden"
     >
-      {/* 1. 画像表示エリア：画面の大部分を占める透明な箱 */}
       <div className="relative w-full flex-grow pointer-events-auto">
         <QuickPinchZoom
           onUpdate={({ x, y, scale }) => {
@@ -162,14 +160,9 @@ export default function PortfolioPage() {
             if (el) el.style.transform = make3dTransformValue({ x, y, scale });
           }}
           draggableUnZoomed={false}
-		  // @ts-ignore: enforceBounds exists in JS but no
           enforceBounds={false}
         >
-          {/* 
-             ここが重要です：
-             コンテナを「画像の最大サイズ」と同じに固定し、
-             その中で画像を 100% 表示させることで計算を一致させます。
-          */}
+
           <div 
             id="zoom-target" 
             className="flex items-center justify-center w-screen h-[calc(100vh-160px)] md:h-[calc(100vh-200px)]"
@@ -190,7 +183,6 @@ export default function PortfolioPage() {
         </QuickPinchZoom>
       </div>
 
-      {/* 2. 下部操作パネル：高さを安定させる */}
       <div className="w-full h-[160px] md:h-[200px] px-4 flex flex-col justify-center text-white pointer-events-auto bg-black border-t border-white/10 z-[150]">
         <div className="max-w-3xl w-full mx-auto">
           {/* タイトル行 */}

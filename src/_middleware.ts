@@ -7,7 +7,7 @@ export function middleware(req: NextRequest) {
   if (
     pathname.startsWith('/_next') || 
     pathname.startsWith('/api') || 
-    pathname.includes('.') // favicon.ico や画像ファイルなど
+    pathname.includes('.') 
   ) {
     return NextResponse.next();
   }
@@ -37,4 +37,3 @@ export function middleware(req: NextRequest) {
   });
 }
 
-//matcher（条件）は使わず、すべてのリクエストを一度このミドルウェアに通す
