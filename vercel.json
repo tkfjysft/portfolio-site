@@ -20,7 +20,7 @@
 
     {
       "source": "/c",
-      "destination": "https://client-00001-web.vercel.app/c"
+      "destination": "https://client-00003-web.vercel.app/c"
     },
     {
       "source": "/c/:path*",
