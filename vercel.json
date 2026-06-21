@@ -16,6 +16,15 @@
     {
       "source": "/b/:path*",
       "destination": "https://client-00001-web.vercel.app/b/:path*"
+    },
+
+    {
+      "source": "/c",
+      "destination": "https://client-00001-web.vercel.app/c"
+    },
+    {
+      "source": "/c/:path*",
+      "destination": "https://client-00003-web-kcmt.vercel.app/c/:path*"
     }
 
   ]
