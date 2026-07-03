@@ -13,7 +13,6 @@ export type Project = {
 export const projects: Project[] = [
 
 
-	
 {id: 1, category: 'thumbnail', title: 'ゆったりカフェBGM【その1】', image: '/images/thumb_00001.jpg', time: '約1時間', link: ''},
 {id: 2, category: 'thumbnail', title: 'ゆったりカフェBGM【その2】', image: '/images/thumb_00002.jpg', time: '約1時間', link: ''},
 {id: 3, category: 'thumbnail', title: '雑学としての半導体', image: '/images/thumb_00003.jpg', time: '約1時間', link: ''},
@@ -154,7 +153,7 @@ export const projects: Project[] = [
 {id: 138, category: 'web', title: 'ジュエリースタジオ ノクターン', image: '/images/web_00001.png', time: '約45時間', link: 'https://portfolio.tsukuri-tai.com/a/'},
 {id: 139, category: 'web', title: 'テック企業 モーションシンク', image: '/images/web_00002.png', time: '約50時間', link: 'https://portfolio.tsukuri-tai.com/b/'},
 {id: 140, category: 'web', title: 'カーショップ LAC', image: '/images/web_00003.png', time: '約50時間', link: 'https://portfolio.tsukuri-tai.com/c/'},
-
+{id: 141, category: 'web', title: '占い YUKI TAROT', image: '/images/web_00004.png', time: '約10時間', link: 'https://portfolio.tsukuri-tai.com/d/'},
 
 
 ];
