@@ -29,7 +29,7 @@
 
     {
       "source": "/d",
-      "destination": "https://client-00004-web.vercel.app/d"
+      "destination": "https://client-00004-web.vercel.app/d/"
     },
     {
       "source": "/d/:path*",
