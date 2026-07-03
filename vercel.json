@@ -27,11 +27,7 @@
       "destination": "https://client-00003-web-kcmt.vercel.app/c/:path*"
     },
 
-    {
-      "source": "/d",
-      "destination": "https://client-00004-web.vercel.app/d/"
-    },
-    {
+	{
       "source": "/d/:path*",
       "destination": "https://client-00004-web.vercel.app/d/:path*"
     }
