@@ -30,7 +30,11 @@
 	{
       "source": "/d/:path*",
       "destination": "https://client-00004-web.vercel.app/d/:path*"
-    }
+    },
 
+	{
+      "source": "/e/:path*",
+      "destination": "https://client-00006-2-web.vercel.app/e/:path*"
+    }
   ]
 }

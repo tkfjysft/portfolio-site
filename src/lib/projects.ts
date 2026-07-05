@@ -154,6 +154,6 @@ export const projects: Project[] = [
 {id: 139, category: 'web', title: 'テック企業 モーションシンク', image: '/images/web_00002.png', time: '約50時間', link: 'https://portfolio.tsukuri-tai.com/b/'},
 {id: 140, category: 'web', title: 'カーショップ LAC', image: '/images/web_00003.png', time: '約50時間', link: 'https://portfolio.tsukuri-tai.com/c/'},
 {id: 141, category: 'web', title: '占い YUKI TAROT', image: '/images/web_00004.png', time: '約10時間', link: 'https://portfolio.tsukuri-tai.com/d/'},
-
+{id: 142, category: 'web', title: '占星術  MAHO\'S ASTROLOGY', image: '/images/web_00005.png', time: '約12時間', link: 'https://portfolio.tsukuri-tai.com/e/'},
 
 ];
