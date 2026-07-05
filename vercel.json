@@ -42,7 +42,7 @@
       "destination": "https://client-00005-web.vercel.app/f"
     },
     {
-      "source": "/a/:path*",
+      "source": "/f/:path*",
       "destination": "https://client-00005-web.vercel.app/f/:path*"
     }
   ]
